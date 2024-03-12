@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html> lang="eng">
+<head>
+    <meta charset="UTF-8" />
+    <title>Student registration</title>
+</head>
+<body>
+    <form action="submit_registration.php" method="post">
+        <label for="name">Name:,</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">Date Of birth:</label>
+        <input type="date" id="dob" name="dob" reqired>
+
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" required>
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+
+        <label for="address"><Address></Address></label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="telephone">telephone:</label>
+        <input type="text" id="telephone" Name="telephone" required>
+
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="course">course</label>
+        <input type="course" id="course" name="course">
+
+       <button type="submit">Register</button>
+       <button type="button" class="cancel" onclick="cancelRegistration()">cancel</button>
+    </form>
+    
+    
+    <script>
+       function cancelregistration() {
+        alert('registration cancelled');
+       }
+    </script>
+</body>
+</html>
